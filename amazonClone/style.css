@@ -45,7 +45,7 @@ margin-left: 2px;
 /* box3 */
 .nav-search{
     display:flex ;
-    background-color: pink;
+    background-color: white;
     width: 620px;
     height: 40px;
     border-radius: 4px;
@@ -267,6 +267,52 @@ text-decoration: underline;
 .image-wrapper:hover .add-to-cart {
     display: block;
 }
+/* nav cart design  */
+.cart-count {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: translate(50%, -50%);
+}
+.nav-cart {
+    position: relative;
+}
+/* styling for login portal */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: 100px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  cursor: pointer;
+}
+
 
 
    

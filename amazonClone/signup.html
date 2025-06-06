@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <input type="text" id="name" placeholder="Your name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Sign In</a></p>
+  </div>
+
+  <script>
+    function signup() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (!name || !email || !password) {
+        alert("Please fill all fields");
+        return;
+      }
+
+      localStorage.setItem("user", JSON.stringify({ name, email, password }));
+      alert("Signup successful! Please login.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

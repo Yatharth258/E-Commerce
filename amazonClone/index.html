@@ -28,7 +28,9 @@
                 <select name="" id="" class="search-select">
                     <option value="">All</option>
                 </select>
-                <input type="text" placeholder="Search Amazon" class="search-input">
+                <!-- <input type="text" placeholder="Search Amazon" class="search-input"> -->
+                <input type="text" id="searchInput" placeholder="Search products...">
+
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -77,13 +79,16 @@
     </div>
     <div class="shopping-section">
         <div class="box">
+            
+
             <div class="box-content">
                 <h2>Get your Game on</h2>
                 <br>
                 <h4>Gaming Mouse</h4>
                 <div class="image-wrapper">
                     <div class="box-image" style="background-image: url('box1.jpg');"></div>
-                    <button class="add-to-cart" data-id="1" data-name="Gaming Mouse" data-price="2999">Add to Cart</button>
+                    <button class="add-to-cart" data-id="1" data-name="Gaming Mouse" data-price="2999">Add to
+                        Cart</button>
                 </div>
                 <p>Shop now</p>
             </div>
@@ -243,6 +248,20 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("searchInput");
+            const products = document.querySelectorAll(".product");
+
+            searchInput.addEventListener("input", () => {
+                const query = searchInput.value.toLowerCase();
+                products.forEach(product => {
+                    const name = product.querySelector(".product-name").textContent.toLowerCase();
+                    product.style.display = name.includes(query) ? "block" : "none";
+                });
+            });
+        });
+    </script>
 
 </body>
 
