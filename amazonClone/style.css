@@ -222,6 +222,8 @@ text-decoration: underline;
 .pages a{
     color: white;
     text-decoration: none;
+    padding-right: 20px;
+   
 }
 
 .pages a:hover{
