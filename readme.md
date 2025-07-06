@@ -63,24 +63,35 @@ Smart-Ecommerce/
     start signup.html
 (or just double-click the file)
 
-No backend or server setup required — everything runs locally in the browser.
+ No backend or server setup required — everything runs locally in the browser.
 
 ---
 
 ## 🖼️ Screenshots
-(Add these screenshots inside a /screenshots folder and embed them below)
 
 Home Page
+
+
 ![image](images/homepage.png)
+
 ![image](images/homepage2.png)
 
+
 Signup Page
+
+
 ![image](images/signup.png)
 
+
 Login Page
+
+
 ![image](images/signin.png)
 
+
 Cart Page
+
+
 ![image](images/cart.png)
 
 ---
